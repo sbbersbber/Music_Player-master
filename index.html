@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Music Player</title>
+    <link rel='stylesheet' href='./css/css.css'>
+    <link rel='stylesheet' href='./css/icon.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="bg-before" style="background-image: url(./pics/1.jpg);"></div>
+    <div id="bg"></div>
+    <audio style= "display: none" id="id-audio-player" controls="controls" src="./songs/1.mp3"></audio>
+    <main>
+        <div id="albumCover" style="background-image: url(./pics/1.jpg);"></div>
+        <div id="progress">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="title">
+            <div id="title-text">乐游记 // 银临 X 徐梦圆</div>
+        </div>
+        <div id="controls">
+            <div class="control">
+                <span class="material-icons icon icon-loop kfc-choice active"
+                    data-modeindex='0'
+                    data-mode='loop'
+                >
+                    &#xE040;
+                </span>
+                <span class="material-icons icon icon-single kfc-choice"
+                    data-modeindex='1'
+                    data-mode='single'
+                >
+                    &#xE041;
+                </span>
+                <span class="material-icons icon icon-random kfc-choice"
+                    data-modeindex='2'
+                    data-mode='random'
+                >
+                    &#xE043;
+                </span>
+            </div>
+            <div class="control">
+                <span class="material-icons icon icon-last kfc-check" data-offset="-1">
+                    &#xE045;
+                </span>
+            </div>
+            <div class="control" id="controls-play">
+                <span class="material-icons icon icon-play">&#xE037;</span>
+                <span class="material-icons icon icon-pause">&#xE034;</span>
+            </div>
+            <div class="control">
+                <span class="material-icons icon icon-next kfc-check" data-offset='1'>
+                &#xE044;
+                </span>
+            </div>
+        </div>
+    </main>
+    <script src="./js/songs.js"></script>
+</body>
+
+</html>
